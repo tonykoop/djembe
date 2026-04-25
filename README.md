@@ -12,7 +12,7 @@ Engineering documentation for the stave-built djembe — a drum that is traditio
 2. **CAD geometry** for the goblet-profile body and the curved stave shapes that approximate it.
 3. **Jig design** for the cutting fixtures that make stave-built djembes reproducible — the new engineering contribution this repo is built around.
 
-Sister project (and methodological descendant) of [`ashiko-drum-workshop`](https://github.com/tonykoop/ashiko-drum-workshop).
+Sister project (and methodological ancestor) of [`ashiko-drum-workshop`](https://github.com/tonykoop/ashiko-drum-workshop).
 
 ## Background
 
