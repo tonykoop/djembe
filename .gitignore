@@ -20,3 +20,9 @@ desktop.ini
 
 # A folder for raw camera files you don't want committed
 /raw/
+
+# Acoustics / FEA solver scratch files
+*.cdb
+*.rst
+*.lock
+abaqus_acis.log
