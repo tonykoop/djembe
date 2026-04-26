@@ -40,6 +40,9 @@ There are roughly three ways around this problem:
 
 The jig design work in this repository targets **approaches B and C** — the geometry is shared, and a fixture that can produce a curved-edge stave is the same kind of thing as a fixture that can guide a lathe gouge through a goblet profile.
 
+![Hand-drafted segmented djembe — 27-ring stack approximating the goblet profile, with per-ring dimensional table](drawings/img20260426_00575906.png)
+*Approach A worked out by hand: a **27-ring segmented-stack design** for a 10"×20" djembe, dated 9/8/2020. The two mirror-image profiles show the goblet outline approximated by a stack of horizontal rings — wide at the head (rings 1–8 ≈ 10.5" OD), narrowing through the neck (rings 13–22 ≈ 5–5.5" OD), then flaring back to the foot (rings 24–27 climbing back to ~8" OD). The right-hand column tabulates the per-ring spec — height (column A), thickness (column B), and outer diameter — so each ring becomes a constant-angle stave problem (the ashiko geometry, just at a different diameter for every ring) instead of a variable-angle one. The visible smooth-curve overlay on top of the stepped profile is the target goblet silhouette this stack approximates; the stair-step error is the inherent cost of Approach A and the reason Approaches B and C exist. **This drawing is the geometry behind the bullet point above** — proof that the segmented approach was worked out as a real design alternative before the jig design effort settled on the curved-stave / lathe-finish path.*
+
 ## Acoustics research — bass-tone analysis (undergrad presentation)
 
 In undergrad I presented an acoustics study modeling the djembe **bass tone** as a **Helmholtz resonator** — the air cavity inside the bowl, coupled to the open drumhead aperture, behaves like a spring-mass system whose resonant frequency sets the deep, low tone you hear when you strike the center of the head.
