@@ -20,7 +20,7 @@ The djembe is a goblet-shaped hand drum originating with the **Mande peoples of 
 
 I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **October 2008**. That tenure is signed and dated inside one of the djembes I built there:
 
-![Signature inside a stave-built djembe — Tony Koop, Morgan Drums, St. Paul MN, 10-10-08](images/01-signature-provenance.jpg)
+![Signature inside a stave-built djembe — Tony Koop, Morgan Drums, St. Paul MN, 10-10-08](images/20260425_115717.jpg)
 
 Morgan Drums introduced me to the design choice this entire repository circles around: **building djembes from staves rather than carving them.** It's not the traditional method, and it's significantly harder to engineer correctly — but it lets you use locally-sourced North American hardwoods, cuts material waste dramatically, and produces a drum with a distinctively bright, articulate tone because the stave seams act as small acoustic discontinuities.
 
