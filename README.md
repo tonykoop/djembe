@@ -40,17 +40,52 @@ There are roughly three ways around this problem:
 
 The jig design work in this repository targets **approaches B and C** — the geometry is shared, and a fixture that can produce a curved-edge stave is the same kind of thing as a fixture that can guide a lathe gouge through a goblet profile.
 
-## Acoustics research
+## Acoustics research — bass-tone analysis (undergrad presentation)
 
-> *(Forthcoming — to be added when I locate the college acoustics study from my undergrad years.)*
+In undergrad I presented an acoustics study modeling the djembe **bass tone** as a **Helmholtz resonator** — the air cavity inside the bowl, coupled to the open drumhead aperture, behaves like a spring-mass system whose resonant frequency sets the deep, low tone you hear when you strike the center of the head.
 
-The college study examined the relationship between djembe shell geometry and the three-tone sound profile (bass / open / slap). Key questions covered:
+The fundamental result is the Helmholtz frequency:
 
-- How does the bowl-to-neck diameter ratio affect bass tone fundamental frequency?
-- How does shell wall thickness influence the spectrum — and is a stave-built shell with internal seams acoustically indistinguishable from a carved shell?
-- What happens to the tone profile when the goatskin head tension is varied across its useful range?
+$$f_H = \frac{v}{2\pi}\sqrt{\frac{A}{V_0 \cdot L_e}}$$
 
-The study informs the geometry choices in `/CAD/djembe-body/` — particularly the bowl diameter and neck-to-bowl ratio targeted by the jig designs.
+where *v* is the speed of sound (~13,500 in/s), *A* is the port (drumhead) area, *V₀* is the cavity volume, and *Lₑ* is the effective port length. For a djembe builder, the engineering question reduces to: **what does V₀ need to be to land on a target bass frequency?**
+
+![Helmholtz formula derivation, slide outline, and the deeper-bass design rule](drawings/img20260426_00141714.png)
+*The presentation outline (top-center): "1st slide: current industry shape · proposed shape & why · design constraints (3:1:2 = 9":3":6", 1:1:1, 10" tall) — 2nd: calculate static volume using multivariable calc." Top-left and top-right: the resonant-frequency formulas, derived in both angular form (`ωH = √(γAP₀/(mV₀))`) and the practical Helmholtz form. The annotation that ties the whole study together is in my own writing under the "frequency of resonance" block: **as V₀ increases, fH decreases ⇒ deeper bass.** That single sentence is the design rule the entire study supports — bigger bowl, lower bass.*
+
+### The geometry problem behind the volume
+
+Most of the eleven pages of working aren't acoustics — they're **geometry**. To get *V₀* for a real djembe profile, I had to:
+
+1. Fit a circular arc through three measured points on the bowl's silhouette (head opening, widest point, neck).
+2. Take that arc's surface of revolution about the drum axis.
+3. Integrate over the bounded section to get the enclosed cavity volume.
+
+The disk method gave me a closed form:
+
+$$V_0 = \pi (b - a) \left[ R^2 - \tfrac{1}{3}(b^2 + ab + a^2) \right]$$
+
+— and from there it was a matter of running numbers for the geometry I wanted.
+
+![Single-page derivation: circle-through-three-points algebra, then disk-method volume integral evaluated to V₀ = 162.3 in³](drawings/img20260426_00115825.png)
+*A clean single-page worked example. Top-left: three points (A,B at ±6, C,D at ±2) and the constraint that they all lie on a circle of unknown radius — the algebra in the top-right column solves the simultaneous equations, gives R = 7.98. Bottom: the volume integral evaluated symbolically and numerically to **V₀ = 162.3 in³** for that geometry.*
+
+### Sweeping the design space
+
+The fun part of having the model is that you can ask "what if?". I ran the calculation for both industry-standard and proposed shapes, and for variants in overall drum height. Small changes in profile produce predictable shifts in bass tone — exactly the design lever a builder wants:
+
+![Two drum-height variants compared with full point-coordinate setup, showing R = 6.34 vs R = 6.72](drawings/img20260426_00132765.png)
+*A two-case sweep: 20"-tall total → R = 6.34, and 22"-tall total → R = 6.72, with full point-coordinate setup at right (head, midpoint, neck and foot points). Sweeping overall height like this lets you trade off bass depth against ergonomics and material cost. The mini-elevation drawing on the left shows the actual djembe profile being measured.*
+
+Across the geometries I computed, the predicted bass fundamental *fH* landed in the **~100–140 Hz** range, which sanity-checks against measured djembe bass tones (typically 80–120 Hz).
+
+### Scope and what's next
+
+This study modeled the **bass tone only** — the deep tone produced by air-cavity Helmholtz resonance. The **open** and **slap** tones a djembe player produces with rim strikes are governed by very different physics: **circular-membrane Bessel modes** on the goatskin head, set by head tension and head diameter, not by cavity volume. Those weren't part of this undergrad presentation; modeling them would be a separate study.
+
+All eleven pages of the original handwritten working — including the false starts, an *"I isn't diameter! only part of top"* mid-derivation correction in the sphere-resonance section, and the comparison against [drums.org](https://drums.org)'s published Mande proportions — live in [`drawings/`](drawings/).
+
+The study informs the geometry choices in `/CAD/djembe-body/` — particularly the bowl-volume target the jig designs will need to hit for a chosen bass tone.
 
 ## CAD and jig design
 
@@ -82,7 +117,7 @@ Build photos from 2008–2013 may exist in personal archives but are not yet rec
 
 Three audiences:
 
-- **The acoustics question** is for me, and for anyone curious about why staved drums sound different from carved drums. The college research suggested they do; the engineering documentation here is the next step in pinning down why.
+- **The acoustics question** is for me, and for anyone curious about how djembe geometry sets its tone. The college research nailed down the bass tone via Helmholtz cavity resonance; the open follow-on questions — membrane modes for the open and slap tones, and whether staved versus carved shells differ acoustically at all — are the next steps.
 - **The jig designs** are for any drum builder who wants to replicate stave-built djembes without the carved-from-solid-hardwood material cost. The jigs lower the barrier from "Morgan Drums apprenticeship" to "weekend project."
 - **The portfolio frame** — for engineers and recruiters reading my GitHub: this repository documents a 17-year continuing craft practice that informs how I think about manufacturing, fixturing, and design-for-reproducibility in my engineering work today. The ashiko workshop ([sister repo](https://github.com/tonykoop/ashiko-drum-workshop)) is the same skill-set applied to a process I scaled to eight other people.
 
@@ -114,7 +149,7 @@ djembe/
 |---|---|
 | Repo description, license, gitignore | ✓ done |
 | Hero photos | ✓ in progress (Tony photographing now) |
-| College acoustics study | searching personal archives |
+| College acoustics study (bass-tone Helmholtz analysis) | ✓ scanned in — 11 pages in `drawings/`, summarized in README |
 | CAD — djembe body geometry | not started |
 | CAD — stave geometry | not started |
 | CAD — jig designs | not started |
