@@ -56,6 +56,9 @@ The study informs the geometry choices in `/CAD/djembe-body/` — particularly t
 
 > *(Forthcoming — actively in progress.)*
 
+![2014 engineering notebook entry — "Djembe from CNC machined staves"](images/20260425_122127.jpg)
+*Page 51, Wednesday April 16, 2014: the original notebook entry where the CNC-machined-stave concept was sketched. Figure 60-a shows the full goblet-body concept; Figure 51-a shows a single-stave concept geometry. The text outlines the idea of using CNC to cut custom-shaped staves, fill seams with contrast sawdust + glue, and sell at art fairs and music stores — the seed of the jig design work this repo is built around.*
+
 Repository structure is laid out for:
 
 - `/CAD/djembe-body/` — the target goblet profile, both the Morgan Drums standard sizes (small, medium, large) and any new variants.
@@ -69,6 +72,9 @@ Both will be CAD-modeled, drawing-exported, and (eventually) physically built an
 ## Build history
 
 Two djembes from my Morgan Drums tenure are pictured at the bottom of the hero photo. Both are stave-built, finished with progressive lacquer coats, rope-tuned with 3/16" double-braided polyester, and headed with locally-sourced goatskin. Both are signed and dated inside the bowl.
+
+![Three finished stave-built djembes](images/20260425_115155.jpg)
+*Three of my stave-built djembes side-by-side — different stave-wood combinations, each goblet body lathe-turned, rope-tuned with 3/16" double-braided polyester, and headed with locally-sourced goatskin. The visible vertical seams are the stave joints — a signature of stave construction versus carved-from-solid.*
 
 Build photos from 2008–2013 may exist in personal archives but are not yet recovered. The current photo set in `/images/` documents the finished drums.
 
