@@ -36,8 +36,8 @@ A djembe stave does not have that property. Because the body's diameter changes 
 There are roughly three ways around this problem:
 
 - **Approach A — Segmented stack.** Build the drum as a stack of short staved "rings," each ring with its own constant compound angle. Glue the rings together vertically. This is essentially how segmented woodturning is done. It works, but the horizontal seams are visible and acoustically distinct.
-- **Approach B — Curved staves.** Cut each stave as a *curved* piece from a thicker hardwood blank, so the stave's edge profile follows the body curve. This is geometrically what you want, but it's expensive in material and requires a cutting fixture that can produce a smooth curved profile reproducibly.
-- **Approach C — Rough-cut and lathe-finish.** Stave-build a slightly oversized cylindrical or conical body, then lathe-turn the goblet profile into the outside surface. The stave seams are interior structural elements and the visible exterior is turned. This is the approach I built with at Morgan Drums.
+- **Approach B — Curved staves.** Cut each stave as a *curved* piece from a thicker hardwood blank, so the stave's edge profile follows the body curve. This is geometrically what you want, but it's expensive in material and requires a cutting fixture that can produce a smooth curved profile reproducibly. This is the approach I built with at Morgan Drums.
+- **Approach C — Rough-cut and lathe-finish.** Stave-build a slightly oversized cylindrical or conical body, then lathe-turn the goblet profile into the outside surface. The stave seams are interior structural elements and the visible exterior is turned. 
 
 The jig design work in this repository targets **approaches B and C** — the geometry is shared, and a fixture that can produce a curved-edge stave is the same kind of thing as a fixture that can guide a lathe gouge through a goblet profile.
 
