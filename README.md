@@ -1,6 +1,6 @@
 # Djembe — Engineering Documentation for a Stave-Built Drum
 
-> *Stave-built djembes — a technique I learned at Morgan Drums (St. Paul, MN) in October 2008 and have been refining as both a craft and an engineering problem ever since.*
+> *Stave-built djembes — a technique I learned at Morgan Drums (St. Paul, MN) in March 2010 and have been refining as both a craft and an engineering problem ever since.*
 
 ![Hero photo](images/00-hero-three-djembes.jpg)
 
@@ -18,9 +18,9 @@ Sister project (and methodological ancestor) of [`ashiko-drum-workshop`](https:/
 
 The djembe is a goblet-shaped hand drum originating with the **Mande peoples of West Africa** — Mali, Guinea, Burkina Faso, Côte d'Ivoire, Senegal. Traditionally it is carved from a single piece of West African hardwood (lenge, djalla, dugura) with a goatskin head and rope tuning. Its sound profile is unusually wide for a hand drum: a deep bass tone from the open center, a sharp open tone from the rim, and a high slap tone played with the fingertips on the rim.
 
-I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **October 2008**. That tenure is signed and dated inside one of the djembes I built there:
+I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **March 2010**. That tenure is signed and dated inside one of the djembes I built there:
 
-![Signature inside a stave-built djembe — Tony Koop, Morgan Drums, St. Paul MN, 10-10-08](images/20260425_115717.jpg)
+![Signature inside a stave-built djembe — Tony Koop, Morgan Drums, St. Paul M]()
 
 Morgan Drums introduced me to the design choice this entire repository circles around: **building djembes from staves rather than carving them.** It's not the traditional method, and it's significantly harder to engineer correctly — but it lets you use locally-sourced North American hardwoods, cuts material waste dramatically, and produces a drum with a distinctively bright, articulate tone because the stave seams act as small acoustic discontinuities.
 
