@@ -6,7 +6,7 @@
 
 ## What this is
 
-Engineering documentation for the stave-built djembe — a drum that is traditionally **carved from a single piece of hardwood** but that I've been building from **stave construction** for 17+ years. This repository combines three threads:
+Engineering documentation for the stave-built djembe — a drum that is traditionally **carved from a single piece of hardwood** but that I've been building from **stave construction** for 16+ years. This repository combines three threads:
 
 1. **Acoustics research** I conducted in college on how djembe geometry produces its characteristic tone.
 2. **CAD geometry** for the goblet-profile body and the curved stave shapes that approximate it.
@@ -18,9 +18,10 @@ Sister project (and methodological ancestor) of [`ashiko-drum-workshop`](https:/
 
 The djembe is a goblet-shaped hand drum originating with the **Mande peoples of West Africa** — Mali, Guinea, Burkina Faso, Côte d'Ivoire, Senegal. Traditionally it is carved from a single piece of West African hardwood (lenge, djalla, dugura) with a goatskin head and rope tuning. Its sound profile is unusually wide for a hand drum: a deep bass tone from the open center, a sharp open tone from the rim, and a high slap tone played with the fingertips on the rim.
 
-I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **March 2010**. That tenure is signed and dated inside one of the djembes I built there:
+I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **March 2010**. That early tenure is signed and dated inside one of the Morgan Drums djembes I worked on there:
 
 ![Signature inside a stave-built djembe — Morgan Drums, St. Paul MN, 4/21/2010](images/20260425_115804.jpg)
+*Signed inside the shell on **April 21, 2010** during my early Morgan Drums period. This one is a good provenance photo because it reflects work I did on the drum without implying I cut the original staves myself.*
 
 Morgan Drums introduced me to the design choice this entire repository circles around: **building djembes from staves rather than carving them.** It's not the traditional method, and it's significantly harder to engineer correctly — but it lets you use locally-sourced North American hardwoods, cuts material waste dramatically, and produces a drum with a distinctively bright, articulate tone because the stave seams act as small acoustic discontinuities.
 
