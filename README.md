@@ -59,6 +59,8 @@ $$f_H = \frac{v}{2\pi}\sqrt{\frac{A}{V_0 \cdot L_e}}$$
 
 where *v* is the speed of sound (~13,500 in/s), *A* is the port (drumhead) area, *V₀* is the cavity volume, and *Lₑ* is the effective port length. For a djembe builder, the engineering question reduces to: **what does V₀ need to be to land on a target bass frequency?**
 
+For this study I use a room-temperature air value for *v* because the djembe problem is a struck-membrane / room-air cavity problem. The [`didgeridoo`](https://github.com/tonykoop/didgeridoo) repo uses a warmer breath-temperature speed of sound intentionally, because it models a player-driven air column.
+
 ![Helmholtz formula derivation, slide outline, and the deeper-bass design rule](drawings/img20260426_00141714.png)
 *The presentation outline (top-center): "1st slide: current industry shape · proposed shape & why · design constraints (3:1:2 = 9":3":6", 1:1:1, 10" tall) — 2nd: calculate static volume using multivariable calc." Top-left and top-right: the resonant-frequency formulas, derived in both angular form (`ωH = √(γAP₀/(mV₀))`) and the practical Helmholtz form. The annotation that ties the whole study together is in my own writing under the "frequency of resonance" block: **as V₀ increases, fH decreases ⇒ deeper bass.** That single sentence is the design rule the entire study supports — bigger bowl, lower bass.*
 
@@ -175,4 +177,4 @@ djembe/
 | CAD — jig designs | not started |
 | Build photos from 2008–2013 | low probability of recovery |
 
-A repository in motion, not a finished portfolio piece.
+Living document — the historical build context, acoustics derivation, and segmented-archive branch are already in place; the main remaining work is CAD body/stave/jig publication.
