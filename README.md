@@ -20,7 +20,7 @@ The djembe is a goblet-shaped hand drum originating with the **Mande peoples of 
 
 I started building drums professionally at **Morgan Drums**, a small family company in St. Paul, Minnesota, in **March 2010**. That tenure is signed and dated inside one of the djembes I built there:
 
-![Signature inside a stave-built djembe — Tony Koop, Morgan Drums, St. Paul M]()
+![Signature inside a stave-built djembe — Morgan Drums, St. Paul MN, 4/21/2010](images/20260425_115804.jpg)
 
 Morgan Drums introduced me to the design choice this entire repository circles around: **building djembes from staves rather than carving them.** It's not the traditional method, and it's significantly harder to engineer correctly — but it lets you use locally-sourced North American hardwoods, cuts material waste dramatically, and produces a drum with a distinctively bright, articulate tone because the stave seams act as small acoustic discontinuities.
 
@@ -43,7 +43,10 @@ The jig design work in this repository targets **approaches B and C** — the ge
 ![Hand-drafted segmented djembe — 27-ring stack approximating the goblet profile, with per-ring dimensional table](drawings/img20260426_00575906.png)
 *Approach A worked out by hand: a **27-ring segmented-stack design** for a 10"×20" djembe, dated 9/8/2020. The two mirror-image profiles show the goblet outline approximated by a stack of horizontal rings — wide at the head (rings 1–8 ≈ 10.5" OD), narrowing through the neck (rings 13–22 ≈ 5–5.5" OD), then flaring back to the foot (rings 24–27 climbing back to ~8" OD). The right-hand column tabulates the per-ring spec — height (column A), thickness (column B), and outer diameter — so each ring becomes a constant-angle stave problem (the ashiko geometry, just at a different diameter for every ring) instead of a variable-angle one. The visible smooth-curve overlay on top of the stepped profile is the target goblet silhouette this stack approximates; the stair-step error is the inherent cost of Approach A and the reason Approaches B and C exist. **This drawing is the geometry behind the bullet point above** — proof that the segmented approach was worked out as a real design alternative before the jig design effort settled on the curved-stave / lathe-finish path.*
 
-That segmented path is no longer just a note in the README: the recovered archive in [`CAD/Segmented Djembe/`](CAD/Segmented%20Djembe/) now includes pattern spreadsheets, rendered previews, summary PDFs, and related segmented variants for djembes, ashikos, and conga-like forms.
+That segmented path is no longer just a note in the README: the recovered archive in [`CAD/Segmented Djembe/`](CAD/Segmented%20Djembe/) now focuses on the djembe-specific branch of that work, with large and small segmented djembe variants, rendered previews, and summary exports. The ashiko and conga-related files that were originally mixed into this folder have now been split back out into their sister repositories so each instrument keeps its own design history.
+
+![Segmented djembe planning sheet and concept render](images/segmented-djembe.png)
+*A later segmented-study sheet: ring-by-ring dimensions and wood-species planning at left, concept rendering at right. Even though the segmented build path was not the final direction I settled on for stave-built djembes, this image shows the design problem being worked through seriously as a manufacturable alternative.*
 
 ## Acoustics research — bass-tone analysis (undergrad presentation)
 
@@ -109,7 +112,9 @@ Repository structure is laid out for:
 
 One historical archive is already present:
 
-- `/CAD/Segmented Djembe/` — recovered segmented-pattern studies, spreadsheets, and summary exports from an earlier design phase focused on ring-built drum bodies.
+- `/CAD/Segmented Djembe/large-djembe/` — large segmented djembe pattern studies, spreadsheets, and exports
+- `/CAD/Segmented Djembe/small-djembe/` — small segmented djembe pattern studies and previews
+- `/CAD/Segmented Djembe/misc/` — summary and supporting archive material retained with the djembe branch
 
 Both will be CAD-modeled, drawing-exported, and (eventually) physically built and tested against a small batch of djembes.
 
@@ -145,8 +150,10 @@ djembe/
 ├── analysis/                  ← derived geometry + tone calculations (forthcoming)
 ├── CAD/
 │   ├── djembe-body/           ← target goblet profiles
-│   ├── Segmented Djembe/      ← recovered segmented-pattern studies,
-│   │                            spreadsheets, and summary exports
+│   ├── Segmented Djembe/      ← recovered segmented djembe archive
+│   │   ├── large-djembe/      ← large segmented variants
+│   │   ├── small-djembe/      ← small segmented variants
+│   │   └── misc/              ← summary and supporting files
 │   ├── stave/                 ← stave geometry, approaches A / B / C
 │   └── jigs/                  ← curve-profile router jig + variable-angle sled
 ├── drawings/                  ← PDF exports of the jigs and key parts
@@ -161,7 +168,7 @@ djembe/
 | Repo description, license, gitignore | ✓ done |
 | Hero photos | ✓ in progress (Tony photographing now) |
 | College acoustics study (bass-tone Helmholtz analysis) | ✓ scanned in — 11 pages in `drawings/`, summarized in README |
-| CAD — historical segmented design archive | ✓ recovered in `CAD/Segmented Djembe/` |
+| CAD — historical segmented design archive | ✓ recovered and organized in `CAD/Segmented Djembe/` |
 | CAD — djembe body geometry | forthcoming |
 | CAD — stave geometry | forthcoming |
 | CAD — jig designs | not started |
