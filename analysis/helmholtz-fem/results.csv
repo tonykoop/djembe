@@ -1,0 +1,4 @@
+size,label,v0_bowl_in3,v_total_in3,neck_area_in2,l_eff_in,f_lumped_hz,f_fem_mode1_hz,f_fem_mode2_hz,f_fem_mode3_hz,deviation_pct_mode1_vs_lumped,n_elem,speed_of_sound_in_per_s
+S,Morgan-9 (small),162.08,603.2382,19.635,6.25,299.1329,190.3815,516.8329,928.705,-36.3555,1200,13500.0
+M,Morgan-10 (medium),226.0022,794.7601,23.7583,6.675,269.637,167.8134,464.5132,835.7736,-37.7632,1200,13500.0
+L,Morgan-12 (large),700.1065,1400.5194,33.1831,8.025,165.123,122.6873,427.8469,716.3767,-25.6995,1200,13500.0

@@ -98,6 +98,10 @@ All eleven pages of the original handwritten working — including the false sta
 
 The study informs the geometry choices in `/CAD/djembe-body/` — particularly the bowl-volume target the jig designs will need to hit for a chosen bass tone.
 
+### L3-frontier follow-up: full-cavity FEM
+
+The lumped Helmholtz model treats the bowl above the neck as one cavity coupled through a zero-volume port. The goblet's foot section is dropped from the formula entirely — and the [`analysis/helmholtz-fem/`](analysis/helmholtz-fem/) study published alongside this README quantifies how much that omission costs. A pure-numpy 1D Webster's-horn FEM (verified against analytic uniform-tube modes to 0.5%) on the parametric goblet profile gives a fundamental that is **25–38% lower** than the lumped prediction across the three Morgan Drums sizes — well above the ~20% "the goblet effect is real" threshold from issue [#1](https://github.com/tonykoop/djembe/issues/1). See [`analysis/helmholtz-fem/results.md`](analysis/helmholtz-fem/results.md) and the deck at [`analysis/helmholtz-fem/capstone.md`](analysis/helmholtz-fem/capstone.md). Empirical (mic + FFT) validation is the L4 follow-on — explicitly deferred at this stage.
+
 ## CAD and jig design
 
 > *(Forthcoming — actively in progress.)*
