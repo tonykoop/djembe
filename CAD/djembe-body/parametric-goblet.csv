@@ -1,0 +1,4 @@
+size,label,head_diameter_in,neck_diameter_in,foot_diameter_in,total_height_in,z_neck_top_in,z_neck_bot_in,neck_length_in,neck_area_in2,l_eff_in,v0_bowl_in3,v_total_in3,f_helmholtz_lumped_hz
+S,Morgan-9 (small),9.0000,5.0000,8.0000,18.0000,4.1000,6.1000,2.0000,19.6350,6.2500,162.0800,603.2382,299.1329
+M,Morgan-10 (medium),10.0000,5.5000,8.5000,20.0000,4.6600,6.6600,2.0000,23.7583,6.6750,226.0022,794.7601,269.6370
+L,Morgan-12 (large),12.0000,6.5000,10.0000,24.0000,10.1200,12.6200,2.5000,33.1831,8.0250,700.1065,1400.5194,165.1230
