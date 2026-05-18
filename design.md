@@ -31,6 +31,8 @@ analysis.
 | `CAD/Segmented Djembe/` | historical segmented archive | Pattern spreadsheets and previews exist; current manufacturing authority is not established. |
 | `CAD/legacy-archive-2018/` | legacy CAD archive | SolidWorks source exists, but review/export status is unknown. |
 | `images/` and `drawings/` | documentation evidence | Photos and scans document history and concepts; they are not dimensional authority by themselves. |
+| `validation-loop.csv` | next-build validation scaffold | Rows name the prediction, measurement method, status, and next action for strike, shell, head, and construction-path checks. |
+| `visual-output-register.csv` | visual authority guard | Photos, scans, figures, and CAD/archive previews are recorded as reference-only until reviewed geometry authority exists. |
 
 ## Acoustic Model Boundary
 
@@ -43,6 +45,22 @@ That result is analysis evidence, not empirical validation. Before claiming
 validated tuning behavior, the repo needs recorded strike data from real drums:
 mic placement, head diameter, head material, tuning state, room conditions,
 strike type, FFT method, and repeated measurements for bass, tone, and slap.
+
+## Strike Validation Plan
+
+Use `validation-loop.csv` as the next-build worksheet. The first empirical pass
+should capture one identified physical drum, one head/tensioning state, and
+three separate strike families:
+
+| Strike family | What it checks | Required context |
+| --- | --- | --- |
+| Bass / center strike | Whether the cavity-mode analysis is directionally useful for a real drum. | Drum ID, head diameter, head material, tuning state, mic distance, room notes, sample rate, FFT window, and repeated takes. |
+| Open tone | Whether rim/edge membrane response is being confused with the bass cavity model. | Strike position, hand technique, head/tension metadata, and repeated takes. |
+| Slap | Whether the high transient content is documented separately from modeled cavity resonance. | Strike position, head/tension metadata, peak/transient notes, and repeated takes. |
+
+Do not revise shell geometry from strike results until the shell dimensions,
+head setup, rim/ring hardware, and rope tensioning state are recorded in the
+same measurement bundle.
 
 ## Design Decisions Still Open
 
@@ -60,11 +78,12 @@ strike type, FFT method, and repeated measurements for bass, tone, and slap.
 
 This repo can move beyond a bare-bones packet only when:
 
-1. `validation.csv` has measured strike data for at least one known drum.
+1. `validation-loop.csv` has measured bass, open-tone, and slap rows for at least one known drum.
 2. Shell geometry is captured in a reviewed drawing, design table, or CAD export.
-3. BOM and sourcing rows distinguish in-hand parts from supplier-unverified parts.
-4. The chosen construction path has a cut list or fixture plan with tolerances.
-5. Safety checks cover head tension, rope/ring loads, glue joints, turning work,
+3. Head material, rim/ring hardware, and rope tensioning state are tied to the strike session.
+4. BOM and sourcing rows distinguish in-hand parts from supplier-unverified parts.
+5. The chosen construction path has a cut list or fixture plan with tolerances.
+6. Safety checks cover head tension, rope/ring loads, glue joints, turning work,
    and any CNC/router jig operations.
 
 Until those gates pass, this packet should be read as a scaffold and evidence

@@ -1,0 +1,8 @@
+artifact_id,path,artifact_kind,role,authority,derived_from,dimension_claim,notes
+IMG-001,images/00-hero-three-djembes.jpg,photo_reference,story,reference_only,,none,Hero photo documents finished drums and context only; it does not control dimensions.
+IMG-002,images/20260425_115804.jpg,photo_reference,story,reference_only,,none,Interior signature/provenance photo; not shell geometry authority.
+SCAN-001,drawings/img20260426_00141714.png,photo_reference,story,reference_only,,none,Scanned Helmholtz derivation/supporting notes; analysis evidence only.
+SCAN-002,drawings/img20260426_00575906.png,photo_reference,story,reference_only,,none,Segmented-stack sketch and table scan; historical construction study, not a reviewed cut sheet.
+PREVIEW-001,CAD/Segmented Djembe/large-djembe/Large Djembe Segmented Pattern 1.PNG,render_preview,story,reference_only,,none,Segmented-djembe CAD/archive preview; export/review required before fabrication use.
+FIG-001,analysis/helmholtz-fem/figures/lumped-vs-fem-bar.png,render_preview,story,reference_only,,none,FEM comparison figure; supports analysis narrative but is not fabrication geometry.
+FIG-002,analysis/helmholtz-fem/figures/goblet-profiles.png,render_preview,story,reference_only,,none,Profile figure generated from analysis inputs; use the CSV and reviewed CAD/design table for any future geometry authority.

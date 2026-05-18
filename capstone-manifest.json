@@ -23,6 +23,8 @@
     "design.md",
     "bom.csv",
     "validation.csv",
+    "validation-loop.csv",
+    "visual-output-register.csv",
     "risks.md",
     "photo-shotlist.md",
     "capstone-manifest.json",
@@ -38,7 +40,22 @@
     "segmented_archive": "CAD/Segmented Djembe/",
     "legacy_cad_archive": "CAD/legacy-archive-2018/",
     "documentation_photos": "images/",
-    "derivation_scans": "drawings/"
+    "derivation_scans": "drawings/",
+    "visual_authority_register": "visual-output-register.csv",
+    "validation_loop": "validation-loop.csv"
+  },
+  "validation_loop": {
+    "path": "validation-loop.csv",
+    "status": "measurement-required",
+    "required_families": [
+      "bass strike",
+      "open tone",
+      "slap",
+      "shell geometry",
+      "head setup",
+      "rim and tensioning hardware"
+    ],
+    "authority_note": "Rows define the next measurement or review action; they do not make the packet empirically validated."
   },
   "release_gate": {
     "public_candidate": false,
@@ -47,17 +64,19 @@
       "Select one construction path before cut lists or jig drawings are treated as actionable.",
       "Promote reviewed CAD, DXF, drawing, or design-table authority before fabrication geometry claims.",
       "Verify BOM sources, dimensions, and safety factors at purchase and build time.",
-      "Document head material, head diameter, rope/ring hardware, and tuning state for any acoustic claim."
+      "Document head material, head diameter, rope/ring hardware, and tuning state for any acoustic claim.",
+      "Validate visual-output-register.csv whenever new photos, scans, renders, or generated images are added."
     ]
   },
   "readiness_ladder": {
-    "current": "L1/L2 starter scaffold",
-    "next": "shop packet after measurement and geometry authority gates",
-    "not_yet": "build-ready or empirically validated packet"
+    "current": "L1_packet analysis-and-validation scaffold",
+    "next": "shop packet candidate after strike measurements and geometry authority gates",
+    "not_yet": "build-ready family, L2 bench-validated, or empirically validated packet"
   },
   "notes": [
     "Existing FEM analysis is analysis evidence only, not physical drum validation.",
     "Existing photos and scans support provenance and documentation, not dimensional authority by themselves.",
+    "The visual-output register currently records reference-only artifacts; no row controls fabrication dimensions.",
     "Supplier, price, and availability information is intentionally unverified in this starter packet."
   ]
 }
