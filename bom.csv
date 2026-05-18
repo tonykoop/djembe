@@ -1,0 +1,9 @@
+item_id,component,role,starter_spec,status,source_status,evidence,notes
+DJM-BOM-001,shell blank,stave-built goblet shell,TBD hardwood species and blank dimensions,measurement-required,source needed,README.md,Do not cut until construction path and geometry authority are chosen.
+DJM-BOM-002,drum head,membrane,TBD goatskin or equivalent,measurement-required,source needed,README.md,Record head diameter thickness collar fit and tuning state before acoustic claims.
+DJM-BOM-003,tuning rope,tension system,TBD rope diameter and material,measurement-required,source needed,README.md,Existing README mentions rope-tuned builds but current purchase data is not verified.
+DJM-BOM-004,steel rings,tension hardware,TBD top and bottom ring dimensions,measurement-required,source needed,README.md,Requires safety check for tension load and fit.
+DJM-BOM-005,stave adhesive,shell assembly,TBD waterproof wood glue or epoxy,source-needed,source needed,risks.md,Must be compatible with selected wood moisture and turning process.
+DJM-BOM-006,finish,shell protection,TBD oil lacquer or other finish,source-needed,source needed,README.md,Existing finished drums are documented but this row is not a current product recommendation.
+DJM-BOM-007,jig stock,router or miter fixture,TBD plywood hardwood or metal fixture stock,requires-design,source needed,design.md,Fixture geometry needs reviewed CAD or drawing authority.
+DJM-BOM-008,measurement kit,validation,microphone tuner tape measure and photo scale,required-before-validation,source needed,validation.csv,Use for strike FFT geometry and photo documentation.

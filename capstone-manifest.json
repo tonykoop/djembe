@@ -1,0 +1,63 @@
+{
+  "title": "Djembe Bare-Bones Starter Packet",
+  "instrument": "djembe",
+  "family": "goblet drum / membrane percussion",
+  "generated": "2026-05-18",
+  "packet_version": "bare-bones readiness packet",
+  "release_status": "private-review scaffold",
+  "build_target": "stave-built djembe evidence map and validation starter",
+  "artifact_focus": "bare-bones packet for djembe acoustics evidence, construction decisions, and validation gates",
+  "family_members": [
+    "stave-built djembe",
+    "goblet drum",
+    "membrane percussion"
+  ],
+  "fabrication_authority": "not build-ready",
+  "cad_dxf_status": "future authority unless reviewed geometry is promoted",
+  "measurement_status": "measurement-required",
+  "issue_refs": [
+    "tonykoop/djembe#4"
+  ],
+  "files_included": [
+    "README.md",
+    "design.md",
+    "bom.csv",
+    "validation.csv",
+    "risks.md",
+    "photo-shotlist.md",
+    "capstone-manifest.json",
+    "explorer.html",
+    "explorer-sections/overview.html",
+    "analysis/helmholtz-fem/results.csv",
+    "CAD/djembe-body/parametric-goblet.csv"
+  ],
+  "evidence": {
+    "repo_readme": "README.md",
+    "fem_analysis": "analysis/helmholtz-fem/",
+    "parametric_profile": "CAD/djembe-body/parametric-goblet.csv",
+    "segmented_archive": "CAD/Segmented Djembe/",
+    "legacy_cad_archive": "CAD/legacy-archive-2018/",
+    "documentation_photos": "images/",
+    "derivation_scans": "drawings/"
+  },
+  "release_gate": {
+    "public_candidate": false,
+    "required_before_public": [
+      "Record repeatable mic/FFT strike measurements for bass, open tone, and slap.",
+      "Select one construction path before cut lists or jig drawings are treated as actionable.",
+      "Promote reviewed CAD, DXF, drawing, or design-table authority before fabrication geometry claims.",
+      "Verify BOM sources, dimensions, and safety factors at purchase and build time.",
+      "Document head material, head diameter, rope/ring hardware, and tuning state for any acoustic claim."
+    ]
+  },
+  "readiness_ladder": {
+    "current": "L1/L2 starter scaffold",
+    "next": "shop packet after measurement and geometry authority gates",
+    "not_yet": "build-ready or empirically validated packet"
+  },
+  "notes": [
+    "Existing FEM analysis is analysis evidence only, not physical drum validation.",
+    "Existing photos and scans support provenance and documentation, not dimensional authority by themselves.",
+    "Supplier, price, and availability information is intentionally unverified in this starter packet."
+  ]
+}

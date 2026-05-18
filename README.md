@@ -14,6 +14,26 @@ Engineering documentation for the stave-built djembe — a drum that is traditio
 
 Sister project (and methodological ancestor) of [`ashiko-drum-workshop`](https://github.com/tonykoop/ashiko-drum-workshop).
 
+## Bare-bones packet
+
+Current packet status: **bare-bones readiness packet**. Fabrication authority:
+**not build-ready**. The files below turn the existing README, CAD archive,
+photos, and Helmholtz/FEM analysis into a reviewable starter surface without
+claiming measured strike validation or cut-ready geometry:
+
+- [`design.md`](design.md) — intent, evidence map, open decisions, and promotion gates.
+- [`bom.csv`](bom.csv) — starter material/component list with source and measurement status.
+- [`validation.csv`](validation.csv) — strike, shell, head, sourcing, and documentation gates.
+- [`risks.md`](risks.md) — acoustic, fabrication, safety, scope, and evidence risks.
+- [`photo-shotlist.md`](photo-shotlist.md) — public-safe documentation and validation shots.
+- [`capstone-manifest.json`](capstone-manifest.json) — machine-readable packet status and release gates.
+- [`explorer.html`](explorer.html) — generated studio index for reviewing the starter packet and existing evidence.
+
+The existing analysis in [`analysis/helmholtz-fem/`](analysis/helmholtz-fem/)
+is analysis evidence only. Empirical mic/FFT strike measurements, reviewed
+CAD/DXF/design-table geometry, and shop safety checks are still required before
+this repo should be treated as a build-ready djembe packet.
+
 ## Background
 
 The djembe is a goblet-shaped hand drum originating with the **Mande peoples of West Africa** — Mali, Guinea, Burkina Faso, Côte d'Ivoire, Senegal. Traditionally it is carved from a single piece of West African hardwood (lenge, djalla, dugura) with a goatskin head and rope tuning. Its sound profile is unusually wide for a hand drum: a deep bass tone from the open center, a sharp open tone from the rim, and a high slap tone played with the fingertips on the rim.
