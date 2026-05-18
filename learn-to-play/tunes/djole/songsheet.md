@@ -1,6 +1,6 @@
 # Djole — Songsheet
 
-**Tempo:** 130 BPM  **Meter:** 4/4  **Difficulty:** ★★★  
+**Tempo:** 130 BPM  **Meter:** 4/4  **Difficulty:** ★★★
 **Tradition:** Sosso youth rhythm, Guinea (public domain)
 
 ## Full pattern (16th-note grid)

@@ -1,6 +1,6 @@
 # Fanga — Songsheet
 
-**Tempo:** 80 BPM  **Meter:** 4/4  **Difficulty:** ★★☆  
+**Tempo:** 80 BPM  **Meter:** 4/4  **Difficulty:** ★★☆
 **Tradition:** Guinea/Liberia welcome rhythm (public domain)
 
 ## Beginner pattern

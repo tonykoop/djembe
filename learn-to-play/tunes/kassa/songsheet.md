@@ -1,6 +1,6 @@
 # Kassa — Songsheet
 
-**Tempo:** 110 BPM  **Meter:** 12/8  **Difficulty:** ★★★  
+**Tempo:** 110 BPM  **Meter:** 12/8  **Difficulty:** ★★★
 **Tradition:** Mandinka harvest rhythm, Guinea (public domain)
 
 ## Solo pattern (12 positions)

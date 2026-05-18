@@ -1,6 +1,6 @@
 # Kuku — Songsheet
 
-**Tempo:** 90 BPM  **Meter:** 12/8 (two bars of 6)  **Difficulty:** ★★☆  
+**Tempo:** 90 BPM  **Meter:** 12/8 (two bars of 6)  **Difficulty:** ★★☆
 **Tradition:** Basse Côte, Guinea (public domain)
 
 ## Pattern (12 positions)
