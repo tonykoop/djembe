@@ -26,3 +26,5 @@ desktop.ini
 *.rst
 *.lock
 abaqus_acis.log
+# Stash-recovery sidecars
+stash-recovered-*/
