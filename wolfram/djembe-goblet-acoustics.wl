@@ -61,7 +61,7 @@ TableForm[
 
 (* ── Interactive Manipulate ── *)
 
-Manipulate[
+djembeExplorer = Manipulate[
   Module[
     {
       (* Convert user sliders to SI *)
