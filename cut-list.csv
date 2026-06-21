@@ -1,0 +1,4 @@
+part,material,qty,thickness_in,width_in,length_in,notes
+shell-stave,TBD hardwood,TBD,TBD,TBD,TBD,Cut miter angles per drawing brief
+bearing-edge-ring,TBD hardwood,1,TBD,TBD,TBD,Sand to radius per design.md
+base-ring,TBD hardwood,1,TBD,TBD,TBD,Optional depending on design
