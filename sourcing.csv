@@ -1,0 +1,6 @@
+part,description,qty,unit,supplier,part_number,unit_price_usd,lead_days,notes
+shell-stock,Hardwood shell stock (TBD species),TBD,board-ft,TBD,TBD,TBD,TBD,Per cut-list.csv
+head,Drum head (TBD diameter),1,each,TBD,TBD,TBD,14,Confirm fit with shell OD
+counter-hoop,Counter hoop (TBD diameter),1,each,TBD,TBD,TBD,14,Match head diameter
+tensioning-hardware,Tensioning hardware (TBD style),TBD,each,TBD,TBD,TBD,TBD,Rope / lug / rod per design.md
+finish,Wood finish (oil / wax / shellac),1,pint,TBD,TBD,TBD,3,Food-safe if skin contact

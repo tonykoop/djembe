@@ -1,0 +1,104 @@
+{
+  "version": "0.1",
+  "generated_at": "2026-06-21",
+  "source_repo": "tonykoop/djembe",
+  "notes": [
+    "V5 percussion export \u2014 artifacts reflect current repo state.",
+    "Authority labels follow instrument-maker v4.5 DXF-first visual authority guard.",
+    "Promote artifacts from derived_preview to fabrication only after reviewed DXF or measured build."
+  ],
+  "packets": [
+    {
+      "id": "djembe",
+      "display_name": "Djembe \u2014 Stave-Built Goblet Drum",
+      "family": "membranophone \u00b7 stave-built goblet drum",
+      "repo_path": ".",
+      "status_line": "Status: L1 bare-bones packet",
+      "readiness_label": "L1 bare-bones packet",
+      "summary": "Engineering documentation for a stave-built djembe \u2014 the West African goblet drum. Includes Helmholtz / Webster horn FEM analysis, segmented-construction study, and parametric goblet geometry CSV. Built at Morgan Drums (St. Paul, MN) 2010.",
+      "site_entry": "explorer.html",
+      "artifacts": [
+        {
+          "id": "README-md",
+          "kind": "README",
+          "label": "Packet README",
+          "path": "README.md",
+          "authority": "reference_only",
+          "preview_role": "packet_card",
+          "runtime_state": "not_applicable",
+          "notes": "Reader-facing summary and repo map."
+        },
+        {
+          "id": "design-md",
+          "kind": "design",
+          "label": "Design sheet",
+          "path": "design.md",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Governing acoustic model, parametric dimensions, and material assumptions."
+        },
+        {
+          "id": "bom-csv",
+          "kind": "bom",
+          "label": "Bill of materials",
+          "path": "bom.csv",
+          "authority": "fabrication",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Part list with quantities, materials, and estimated cost."
+        },
+        {
+          "id": "validation-csv",
+          "kind": "validation",
+          "label": "Validation table",
+          "path": "validation.csv",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Predicted vs measured values; names remaining measurement gates."
+        },
+        {
+          "id": "risks-md",
+          "kind": "risks",
+          "label": "Risk register",
+          "path": "risks.md",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Acoustic, structural, ergonomic, supply, and fit/finish risks each with a verification test."
+        },
+        {
+          "id": "photo-shotlist-md",
+          "kind": "photo_shotlist",
+          "label": "Photo shot list",
+          "path": "photo-shotlist.md",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Required shots per build stage for build-log documentation."
+        },
+        {
+          "id": "visual-output-register-csv",
+          "kind": "visual_output_register",
+          "label": "Visual output register",
+          "path": "visual-output-register.csv",
+          "authority": "reference_only",
+          "preview_role": "detail_link",
+          "runtime_state": "not_applicable",
+          "notes": "Records which artifacts are previews versus controlling geometry."
+        },
+        {
+          "id": "wolfram-model",
+          "kind": "wolfram_model",
+          "label": "Wolfram model \u2014 djembe-goblet-acoustics.wl",
+          "path": "https://www.wolframcloud.com/obj/wrfcoin/Musical_Instruments/percussion/djembe/djembe-goblet-acoustics.wl",
+          "authority": "reference_only",
+          "preview_role": "runtime_note",
+          "runtime_state": "source_only",
+          "notes": "Acoustic physics source. Source-only \u2014 no executed runtime output claimed."
+        }
+      ]
+    }
+  ]
+}

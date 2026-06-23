@@ -73,6 +73,23 @@
     "next": "shop packet candidate after strike measurements and geometry authority gates",
     "not_yet": "build-ready family, L2 bench-validated, or empirically validated packet"
   },
+  "engineering": {
+    "authority_register": "visual-output-register.csv",
+    "validation_gates": "validation.csv",
+    "validation_loop": "validation-loop.csv",
+    "design_packet": "design.md",
+    "fem_analysis": "analysis/helmholtz-fem/",
+    "parametric_goblet": "CAD/djembe-body/parametric-goblet.csv",
+    "wolfram": [
+      {
+        "source_file": "wolfram/djembe-goblet-acoustics.wl",
+        "cloud_path": "pending",
+        "cloud_url": "pending",
+        "permission": "Public-Execute",
+        "kind": "acoustics-starter"
+      }
+    ]
+  },
   "notes": [
     "Existing FEM analysis is analysis evidence only, not physical drum validation.",
     "Existing photos and scans support provenance and documentation, not dimensional authority by themselves.",
