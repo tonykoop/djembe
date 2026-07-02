@@ -1,0 +1,25 @@
+{
+  "entrant": "codex-gpt-5.5",
+  "exported_at": "2026-07-02T22:10:39+00:00",
+  "generated": true,
+  "instrument_id": "stave-djembe",
+  "objective": {
+    "gate": "makerbench.code_cad_arena_runner.mesh_objective_gate",
+    "objective_pass_rate": 1.0,
+    "passed": true,
+    "sub_scores": {
+      "body_count": 1.0,
+      "fits_envelope": 1.0,
+      "min_wall": 1.0,
+      "nonzero_volume": 1.0,
+      "renders": 1.0,
+      "watertight": 1.0
+    }
+  },
+  "rep": 0,
+  "run_id": "round2",
+  "schema": "makerbench-code-cad-arena-winner-v1",
+  "seed": 0,
+  "trial_id": "stave-djembe__seed0__rep0__codex-gpt-5.5",
+  "vote_wins": 3.0
+}
