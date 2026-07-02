@@ -14,12 +14,20 @@ Engineering documentation for the stave-built djembe — a drum that is traditio
 
 Sister project (and methodological ancestor) of [`ashiko-drum-workshop`](https://github.com/tonykoop/ashiko-drum-workshop).
 
-## Bare-bones packet
+**Status:** L2 V5 build-packet candidate
 
-Current packet status: **bare-bones readiness packet**. Fabrication authority:
-**not build-ready**. The files below turn the existing README, CAD archive,
-photos, and Helmholtz/FEM analysis into a reviewable starter surface without
-claiming measured strike validation or cut-ready geometry:
+## Readiness
+
+L2 scaffold — previously a bare-bones readiness packet; this pass fills in
+the missing V5 surface (README status line, `CAD/mcp-session-log.md`
+provenance, `visual-output-register.csv` rows for the new CAD/Wolfram
+artifacts, and `evolution/` Stage 0 intake) without upgrading any acoustic or
+fabrication claim. Fabrication authority: **not build-ready**. The files
+below turn the existing README, CAD archive, photos, and Helmholtz/FEM
+analysis into a reviewable starter surface without claiming measured strike
+validation or cut-ready geometry.
+
+## Packet Contents
 
 - [`design.md`](design.md) — intent, evidence map, open decisions, and promotion gates.
 - [`bom.csv`](bom.csv) — starter material/component list with source and measurement status.
@@ -30,6 +38,10 @@ claiming measured strike validation or cut-ready geometry:
 - [`photo-shotlist.md`](photo-shotlist.md) — public-safe documentation and validation shots.
 - [`capstone-manifest.json`](capstone-manifest.json) — machine-readable packet status and release gates.
 - [`explorer.html`](explorer.html) — generated studio index for reviewing the starter packet and existing evidence.
+- [`CAD/djembe.scad`](CAD/djembe.scad) — parametric OpenSCAD goblet-body envelope master (S/M/L Morgan profiles from `CAD/djembe-body/parametric-goblet.csv`); authority `pending_measurement`.
+- [`wolfram/djembe-goblet-acoustics.wl`](wolfram/djembe-goblet-acoustics.wl) — lumped-Helmholtz cavity acoustics source model for the same S/M/L profiles; source-only, authority `derived_preview`.
+- [`CAD/mcp-session-log.md`](CAD/mcp-session-log.md) — V5 provenance log for CAD-authoring, Wolfram, and packet-refresh sessions.
+- `evolution/` — evolution-pipeline Stage 0 intake: master manifest, design-intent, and revision register (Gate A not yet run).
 
 The existing analysis in [`analysis/helmholtz-fem/`](analysis/helmholtz-fem/)
 is analysis evidence only. Empirical mic/FFT strike measurements, reviewed
@@ -38,9 +50,11 @@ this repo should be treated as a build-ready djembe packet.
 
 The V5 promotion path for issue
 [#4](https://github.com/tonykoop/djembe/issues/4) is therefore conservative:
-the repo now has an explorer, manifest, validation loop, and visual authority
-register, but shell geometry, head setup, rim/tensioning hardware, and strike
-measurements remain explicit blockers before any family or shop-packet claim.
+the repo now has an explorer, manifest, validation loop, visual authority
+register, a parametric OpenSCAD goblet-body envelope master, and V5
+provenance/evolution intake, but shell wall thickness, head setup,
+rim/tensioning hardware, and strike measurements remain explicit blockers
+before any family or shop-packet claim.
 
 ## Background
 
@@ -204,7 +218,7 @@ djembe/
 | Hero photos | ✓ in progress (Tony photographing now) |
 | College acoustics study (bass-tone Helmholtz analysis) | ✓ scanned in — 11 pages in `drawings/`, summarized in README |
 | CAD — historical segmented design archive | ✓ recovered and organized in `CAD/Segmented Djembe/` |
-| CAD — djembe body geometry | forthcoming |
+| CAD — djembe body geometry | ✓ parametric OpenSCAD goblet-body envelope master (`CAD/djembe.scad`); authority `pending_measurement`, not yet reviewed against a measured template |
 | CAD — stave geometry | forthcoming |
 | CAD — jig designs | not started |
 | Build photos from 2008–2013 | low probability of recovery |

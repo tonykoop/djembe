@@ -1,0 +1,34 @@
+{
+  "product": "djembe",
+  "pipeline": "studiopipeline:evolution-pipeline",
+  "stage": "0-intake",
+  "master_revision": "rev-A (pre-commit intake, 2026-07-01)",
+  "generated": "2026-07-01",
+  "cad_masters": [
+    {
+      "path": "CAD/djembe.scad",
+      "format": "openscad-source",
+      "sha256": "f54640659c859cbd9a7de8aadafbfd12501861a5ecde3acf5de337ba1b588601",
+      "authority": "pending_measurement",
+      "lossy": false,
+      "notes": "Parametric goblet-body envelope master; S/M/L Morgan profiles from CAD/djembe-body/parametric-goblet.csv. Wall thickness/hollow shell not modeled."
+    },
+    {
+      "path": "CAD/djembe-body/parametric-goblet.csv",
+      "format": "design-table",
+      "sha256": "90f9dbf534af5e27823fdf9080c4d266db8c90001bdd95f90c22255b7c81208c",
+      "authority": "reference_only",
+      "lossy": false,
+      "notes": "Current dimensional reference (Morgan-9/10/12 S/M/L head/neck/foot diameters, neck z-window, total height, and derived Helmholtz terms). Not yet reviewed/promoted to fabrication authority."
+    },
+    {
+      "path": "wolfram/djembe-goblet-acoustics.wl",
+      "format": "wolfram-source",
+      "sha256": "052015ad8ff8aa91d126dc2977ada6afffeca04cef078e1af071f7f38582a416",
+      "authority": "derived_preview",
+      "lossy": false,
+      "notes": "Source-only (not executed); lumped-Helmholtz cavity model, L2 evidence."
+    }
+  ],
+  "notes": "OpenSCAD source + parametric-goblet.csv are the current masters; no STEP/SolidWorks export of the goblet body exists yet (the legacy CAD/Djembe/ and CAD/Segmented Djembe/ SolidWorks archives are historical reference, not this master's lineage). Gate A (Alpha workspace compile) not yet run."
+}
